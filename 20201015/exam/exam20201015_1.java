@@ -1,3 +1,5 @@
+package exam;
+
 public class exam20201015_1 {
 
     static final double PI = 3.1416;
