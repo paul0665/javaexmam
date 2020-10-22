@@ -37,10 +37,9 @@ package exam;public class exam20201022_2 {
     }
     public static float getAns(float input) {
         float ans = 0F;
-        ans = input < 0F ? ans = input * -1F :
-                (
-                        input >= 0F ? input:input
-                );
+        ans = input < 0F ? ans = input * -1F : (
+                input >= 0F ? input:input//if(input >= 0F)
+        );
         System.out.println("\ngetAns input: " + input + "\ngetAns return: "+ ans);
         return ans;
     }
