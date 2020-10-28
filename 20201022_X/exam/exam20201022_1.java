@@ -26,7 +26,7 @@
 
 package exam;public class exam20201022_1 {
 
-    static final float price = 268;
+    static final float price = 399;
 
     public static void main(String[] args){
         float payed = 0;
