@@ -54,7 +54,7 @@ public class test {
       HttpResponse result = httpClient.execute(request);
       String json = EntityUtils.toString(result.getEntity(), "UTF-8");
       JSONObject message = new JSONObject(json);
-      //message = new JSONObject(message.get("assets"));
+
       JSONArray assetslist = new JSONArray(message.get("assets").toString());
 
       JSONObject assets_0 = (JSONObject) assetslist.get(0);
