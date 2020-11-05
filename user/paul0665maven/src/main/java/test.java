@@ -45,6 +45,7 @@ public class test {
   public static void main(String[] args){
 
     String url = "https://api.github.com/repos/mc-serverworld/worldMISF/releases/latest";
+    String url2 = "https://api.github.com/repos/mc-serverworld/worldMISF/releases/33157114/assets";
 
     try {
 
@@ -55,7 +56,15 @@ public class test {
       String json = EntityUtils.toString(result.getEntity(), "UTF-8");
       JSONObject message = new JSONObject(json);
 
+      CloseableHttpClient httpClient2 = HttpClientBuilder.create().build();
+      HttpGet request2 = new HttpGet(message.getString("assets_url"));
+      HttpResponse result2 = httpClient2.execute(request2);
+      String json2 = EntityUtils.toString(result2.getEntity(), "UTF-8");
+
+      //SONObject message2 = new JSONObject(json2);
+
       JSONArray assetslist = new JSONArray(message.get("assets").toString());
+      System.out.println(json2);
 
       JSONObject assets_0 = (JSONObject) assetslist.get(0);
       assets_0 = new JSONObject(assets_0.toString(0));
@@ -85,7 +94,7 @@ public class test {
       URLConnection conn = url.openConnection();
       InputStream inStream = conn.getInputStream();
       FileOutputStream fs = new FileOutputStream("D:/" +filename);
-      byte[] buffer = new byte[1204];
+      byte[] buffer = new byte[102400];
       int length;
       while ((byteread = inStream.read(buffer)) != -1) {
         bytesum  = byteread;
