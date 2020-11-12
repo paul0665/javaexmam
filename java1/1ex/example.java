@@ -1,5 +1,5 @@
 public class example {
-  
+
   boolean aBoolean = false;
   byte aByte = 0;
   char aChar = 0;
