@@ -26,12 +26,18 @@
 
 package exam;
 
+import java.util.Scanner;
+
 public class exam20201126_2 {
 
-    public static final int h = 4;
-    public static final int w = 4;
+
 
     public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        
+        int h = scanner.nextInt();
+        int w=h;
+
         for (int i=1; i<=h;i++) {
 
             for (int l=0; l<(w-i);l++) {
