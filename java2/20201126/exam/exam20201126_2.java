@@ -33,7 +33,7 @@ public class exam20201126_2 {
 
     public static void main(String[] args){
         for (int i=1; i<=h;i++) {
-            
+
             for (int l=0; l<(w-i);l++) {
                 System.out.print(" ");
             }
@@ -43,6 +43,5 @@ public class exam20201126_2 {
             }
             System.out.println();
         }
-
     }
 }
