@@ -24,30 +24,29 @@
  *
  */
 
-package exam;
+package exam1;import exam1.lib.Score;
 
-import java.util.Scanner;
+public class main {
+    public static void main(String[] stg){
+        Score score1 = new Score();
+        Score score2 = new Score();
+        score1.setName("Jack");
+        score1.set1Score(78,"C");
+        score1.set1Score(65,"E");
+        score1.set1Score(85,"M");
+        score2.setName("Jennifer");
+        score2.set3Score(82,71,65);
 
-public class exam20201126_2 {
+        score1.show(System.out);
+        score2.show(System.out);
 
-
-
-    public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in);
-
-        int h = scanner.nextInt();
-        int w=h;
-
-        for (int i=1; i<=h;i++) {
-
-            for (int l=0; l<(w-i);l++) {
-                System.out.print(" ");
-            }
-
-            for (int l=0; l<i;l++) {
-                System.out.print("*");
-            }
-            System.out.println();
-        }
+        System.out.println(score1.compare(score2,"C"));
+        System.out.println(score1.compare(score2,"E"));
+        System.out.println(score1.compare(score2,"M"));
+        System.out.println();
+        System.out.println(score2.compare(score1,"C"));
+        System.out.println(score2.compare(score1,"E"));
+        System.out.println(score2.compare(score1,"M"));
     }
+
 }

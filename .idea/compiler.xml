@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <option name="BUILD_PROCESS_ADDITIONAL_VM_OPTIONS" value="-Djps.track.ap.dependencies=false" />
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -8,10 +9,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="javaexmam" />
         <module name="paul0665" />
+        <module name="20201224" />
+        <module name="old" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="20201224" target="11" />
+      <module name="java3" target="11" />
       <module name="javaexmam" target="6" />
+      <module name="old" target="11" />
       <module name="paul0665" target="11" />
     </bytecodeTargetLevel>
   </component>

@@ -24,30 +24,41 @@
  *
  */
 
-package exam;
+package io;
 
-import java.util.Scanner;
+public class BMI {
+    public BMI(String Name,int Height,int Weight){
+        this.name = Name;
+        this.height = Height;
+        this.weight = Weight;
+        cau();
+    }
+    private int height;
+    private int weight;
+    private double bmi;
+    private String name;
 
-public class exam20201126_2 {
+    public void show(){
+        System.out.println(name + " Status:");
+        System.out.println("Height: " + height);
+        System.out.println("Weight: " + weight);
+        System.out.println("BMI: " + bmi);
+        System.out.println("BMI status: " + getBmiStatus());
+        System.out.println();
+    }
 
+    private void cau(){
+        bmi = weight/((height/100)^2);
+    }
 
+    public String getBmiStatus(){
+        if(bmi<18.5)
+            return "Low";
+        if(bmi<24)
+            return "Normal";
+            return "Over";
+    }
+    public void printStatus(){
 
-    public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in);
-
-        int h = scanner.nextInt();
-        int w=h;
-
-        for (int i=1; i<=h;i++) {
-
-            for (int l=0; l<(w-i);l++) {
-                System.out.print(" ");
-            }
-
-            for (int l=0; l<i;l++) {
-                System.out.print("*");
-            }
-            System.out.println();
-        }
     }
 }

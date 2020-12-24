@@ -24,30 +24,12 @@
  *
  */
 
-package exam;
+import io.BMI;
 
-import java.util.Scanner;
-
-public class exam20201126_2 {
-
-
+public class main {
 
     public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in);
-
-        int h = scanner.nextInt();
-        int w=h;
-
-        for (int i=1; i<=h;i++) {
-
-            for (int l=0; l<(w-i);l++) {
-                System.out.print(" ");
-            }
-
-            for (int l=0; l<i;l++) {
-                System.out.print("*");
-            }
-            System.out.println();
-        }
+       BMI s1 = new BMI("HH",180,50);
+       s1.show();
     }
 }
