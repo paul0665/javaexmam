@@ -26,5 +26,21 @@
 
 package exam2.lib;
 
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.io.PrintStream;
+
 public class Shape {
+    @Getter(AccessLevel.PUBLIC) @Setter(AccessLevel.PUBLIC) private int Bottom;
+    @Getter(AccessLevel.PUBLIC) @Setter(AccessLevel.PUBLIC) private int Height;
+    @Getter(AccessLevel.PUBLIC) @Setter(AccessLevel.PUBLIC) private double Perimeter;
+    @Getter(AccessLevel.PUBLIC) @Setter(AccessLevel.PUBLIC) private double Area;
+
+    public void show(PrintStream stream) {
+        stream.println("Bottom: " + getBottom());
+        stream.println("Height: " + getHeight());
+
+    }
 }

@@ -24,7 +24,9 @@
  *
  */
 
-package exam1;import exam1.lib.Score;
+package exam1;
+
+import exam1.lib.Score;
 
 public class main {
     public static void main(String[] stg){

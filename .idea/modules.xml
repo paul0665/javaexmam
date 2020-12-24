@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/java3/20201224/20201224.iml" filepath="$PROJECT_DIR$/java3/20201224/20201224.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java3/StandardLib/StandardLib.iml" filepath="$PROJECT_DIR$/java3/StandardLib/StandardLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/java3/java3.iml" filepath="$PROJECT_DIR$/java3/java3.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaexmam.iml" filepath="$PROJECT_DIR$/javaexmam.iml" />
       <module fileurl="file://$PROJECT_DIR$/java3/old/old.iml" filepath="$PROJECT_DIR$/java3/old/old.iml" />

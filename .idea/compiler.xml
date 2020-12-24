@@ -11,6 +11,7 @@
         <module name="paul0665" />
         <module name="20201224" />
         <module name="old" />
+        <module name="StandardLib" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +20,7 @@
       <module name="javaexmam" target="6" />
       <module name="old" target="11" />
       <module name="paul0665" target="11" />
+      <module name="StandardLib" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
