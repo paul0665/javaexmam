@@ -43,10 +43,12 @@ public class Object3D {
         double cone = Math.sqrt(hs*(hs-a)*(hs-b)*(hs-c));
         return cone*h/3;
     }
+
     public int volume(int l,int w,int h){
         return l*w*h;
     }
+
     public double volume(double x1,double y1,double z1,double x2,double y2,double z2){
-        return ((x1-x2)*(y1-y2)*(z1-z2));
+        return Math.abs((x1-x2)*(y1-y2)*(z1-z2));
     }
 }

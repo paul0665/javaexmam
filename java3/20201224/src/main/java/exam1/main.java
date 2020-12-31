@@ -33,22 +33,22 @@ public class main {
         Score score1 = new Score();
         Score score2 = new Score();
         score1.setName("Jack");
-        score1.set1Score(78,"C");
-        score1.set1Score(65,"E");
+        score1.set1Score(82,"C");
+        score1.set1Score(50,"E");
         score1.set1Score(85,"M");
         score2.setName("Jennifer");
-        score2.set3Score(82,71,65);
+        score2.set3Score(82,50,65);
 
         score1.show(System.out);
         score2.show(System.out);
 
-        System.out.println(score1.compare(score2,"C"));
-        System.out.println(score1.compare(score2,"E"));
-        System.out.println(score1.compare(score2,"M"));
+        System.out.println("C: " + score1.compare(score2,"C"));
+        System.out.println("E: " + score1.compare(score2,"E"));
+        System.out.println("M: " + score1.compare(score2,"M"));
         System.out.println();
-        System.out.println(score2.compare(score1,"C"));
-        System.out.println(score2.compare(score1,"E"));
-        System.out.println(score2.compare(score1,"M"));
+        System.out.println("C: " + score2.compare(score1,"C"));
+        System.out.println("E: " + score2.compare(score1,"E"));
+        System.out.println("M: " + score2.compare(score1,"M"));
     }
 
 }

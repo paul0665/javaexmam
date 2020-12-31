@@ -37,18 +37,22 @@ public class ReturnFun {
     }
 
     public double fn(double n){
-        double temp=0;
-        for(int i=1;i<=n;i++){
-            temp+=(fns(i));
-        }
-        return temp;
-    }
-
-    private double fns(double n){//fn sub fun
-        return 1/n;
+        if(n==1)
+            return 1;
+        return 1/n + fn(n-1);
     }
 
     public double fp(double a,int b){
-        return Math.pow(a,b);
+        if(b==0)
+            return 1;
+        double temp=1;
+
+        for(int i=0;i<Math.abs(b);i++){
+            if(b>0)
+                temp=temp*a;
+            if(b<0)
+                temp=temp/a;
+        }
+        return temp;
     }
 }
