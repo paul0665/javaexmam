@@ -26,6 +26,8 @@
 
 package libs;
 
+import java.math.BigDecimal;
+
 public class BMI {
     public BMI(String Name, int Height, int Weight){
         this.name = Name;
@@ -38,7 +40,7 @@ public class BMI {
     private String name;
 
     public void calculate(){
-        bmi = weight/((height/100)^2);
+        bmi =  ((double)weight/((height/100)^2));
     }
     public void show(){
         System.out.print(" " + name + " Status:");

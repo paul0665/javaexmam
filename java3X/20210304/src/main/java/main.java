@@ -29,7 +29,7 @@ import libs.Score;
 
 public class main {
     public static void main(String[] args){
-        BMI s1 = new BMI("Jack",180,50);
+        BMI s1 = new BMI("Jack",180,61);
         BMI s2 = new BMI("Jennifer",160,40);
         s1.calculate();
         s2.calculate();
