@@ -12,6 +12,7 @@
         <module name="20210114" />
         <module name="paul0665" />
         <module name="20210107" />
+        <module name="20210304" />
         <module name="old" />
         <module name="20201231" />
         <module name="20201224" />
@@ -23,7 +24,9 @@
       <module name="20201231" target="11" />
       <module name="20210107" target="11" />
       <module name="20210114" target="11" />
+      <module name="20210304" target="11" />
       <module name="java3" target="11" />
+      <module name="java3X" target="11" />
       <module name="javaexmam" target="6" />
       <module name="old" target="11" />
       <module name="paul0665" target="11" />

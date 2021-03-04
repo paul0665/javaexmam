@@ -8,10 +8,11 @@
         <option value="$PROJECT_DIR$/user/paul0665maven/pom.xml" />
         <option value="$PROJECT_DIR$/java3/20201210/exam/exam20201210_1/pom.xml" />
         <option value="$PROJECT_DIR$/java3/pom.xml" />
+        <option value="$PROJECT_DIR$/java3X/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_14" default="false" project-jdk-name="openjdk-15" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_14" project-jdk-name="openjdk-15" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
