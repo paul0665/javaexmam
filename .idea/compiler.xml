@@ -10,6 +10,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="javaexmam" />
         <module name="20210114" />
+        <module name="20210311" />
         <module name="paul0665" />
         <module name="20210107" />
         <module name="20210304" />
@@ -25,6 +26,7 @@
       <module name="20210107" target="11" />
       <module name="20210114" target="11" />
       <module name="20210304" target="11" />
+      <module name="20210311" target="11" />
       <module name="java3" target="11" />
       <module name="java3X" target="11" />
       <module name="javaexmam" target="6" />
